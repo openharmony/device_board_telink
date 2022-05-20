@@ -1,39 +1,72 @@
 # device_board_telink
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 介绍
 
-#### 软件架构
-软件架构说明
+泰凌微公司的B91 Generic Starter Kit是一个可用于评估TLSR9系列芯片组的硬件平台，它可以用于开发适用于多种2.4GHz接口标准的应用程序，包括BLE，BLE Mesh、Zigbee 3.0, Thread和2.4GHz私有协议等。
 
+开发板正反面视图如下：
 
-#### 安装教程
+![开发板正面视图](image/TLSR9518ADK80D_Top_View.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![开发板背面视图](image/TLSR9518ADK80D_Bottom_View.png)
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 开发板规格
 
 
-#### 特技
+| 器件类别	 |              开发板              |
+| ---------- | -------------------------------- |
+| CPU	      | TLSR9518A, RISC-V (Max: 96MHz) |
+| RAM	      | 256KB SRAM                       |
+| Flash	      | 2MB SPI Flash                    |
+| GPIO	      | 40                             |
+| I2C	      | 1                               |
+| UART       | 2                                |
+| SPI	      | Memory SPI, HSPI, PSPI       |
+| USB	      | 1                            |
+| PWM	      | 6                             |
+| LED	      | 4                                |
+| Debug 	    | JTAG、Swire               |
+| ADC	      | 10-channel 14bit auxilary ADC |
+| Button	| 4 |
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## OpenHarmonyOS关键特性
+
+
+| 组件名       | 能力介绍                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------ |
+| 内核         | LiteOS-M                                                                                        |
+| 上电启动     | 上电启动OpenHarmonyOS                                                                          |
+| BLE服务      | 提供BLE功能                                          |
+| 外设控制     | 提供操作外设的能力，包括：I2C、ADC、UART、SPI、GPIO、PWM、FLASH等。                      |
+| 系统服务管理 | 系统服务管理基于面向服务的架构，提供了OpenHarmonyOS统一化的系统服务开发框架。                  |
+| 启动引导     | 提供系统服务的启动入口标识。在系统服务管理启动时，调用boostrap标识的入口函数，并启动系统服务。 |
+| 系统属性     | 提供获取与设置系统属性的能力。                                                                   |
+| 基础库       | 提供公共基础库能力，包括：文件操作、KV存储管理等。                                                      |
+| DFX          | 提供DFX能力，包括：流水日志等。                                                     |
+| HDF	       | 提供OpenHarmony硬件配置驱动的能力。                                                         |
+| XTS          | 提供OpenHarmonyOS生态认证测试套件的集合能力。                                                    |
+
+## 开发板设计文档
+
+参考 [开发板设计文档](http://wiki.telink-semi.cn/doc/hw/B91_DevelopmentBoard_TLSR9518ADK80D.zip)
+
+### 环境搭建
+
+参考 [环境搭建步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README.md)
+
+
+## 编译调试
+
+参考 [编译调试步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README.md)
+
+
+## 示例代码
+
+代码默认有3个示例：
+1. [LED应用示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_led_demo)
+2. [BLE测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_ble_demo)
+2. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_xts_demo)
+
+## 联系
+
+如果您在开发过程中有问题，请在仓库[issues](https://gitee.com/openharmony-sig/device_board_telink/issues)提问。
