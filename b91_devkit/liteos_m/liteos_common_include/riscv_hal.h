@@ -31,8 +31,6 @@ extern "C" {
 extern VOID HalIrqDisable(UINT32 vector);
 extern VOID HalIrqEnable(UINT32 vector);
 extern VOID HalSetLocalInterPri(UINT32 vector, UINT16 prior);
-// 
-// extern VOID HalClockInit(OS_TICK_HANDLER handler, UINT32 period);
 
 #ifdef __cplusplus
 #if __cplusplus

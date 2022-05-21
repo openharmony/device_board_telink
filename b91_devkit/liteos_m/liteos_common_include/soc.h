@@ -18,6 +18,7 @@
 
 #ifndef _SOC_H
 #define _SOC_H
+
 #include "soc_common.h"
 
 /*
@@ -28,12 +29,12 @@
 #define MTIMERCMP                                     0xE6000008
 #define MTIMER                                        0xE6000000
 
-#define RISCV_SYS_MAX_IRQ                              11
+#define RISCV_SYS_MAX_IRQ                             11
 
-/* 
+/*
  * Because of strange implementation of los_interrupt.c in kernel sum of
  * (RISCV_SYS_MAX_IRQ + RISCV_PLIC_VECTOR_CNT) should be at least 25
  */
-#define RISCV_PLIC_VECTOR_CNT                          14
+#define RISCV_PLIC_VECTOR_CNT                         14
 
 #endif

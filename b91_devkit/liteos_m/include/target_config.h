@@ -23,14 +23,14 @@
 #ifndef _TARGET_CONFIG_H
 #define _TARGET_CONFIG_H
 
+#include "soc.h"
+#include "memmap_config.h"
+
 #ifdef __cplusplus
 #if __cplusplus
 extern "C" {
 #endif /* __cplusplus */
 #endif /* __cplusplus */
-
-#include "soc.h"
-#include "memmap_config.h"
 
 /*=============================================================================
                                         System clock module configuration
@@ -81,9 +81,9 @@ extern "C" {
                                        Memory module configuration
 =============================================================================*/
 #define LOSCFG_SYS_HEAP_SIZE                                OS_SYS_MEM_SIZE
-#define LOSCFG_SYS_EXTERNAL_HEAP         1
-#define OS_SYS_MEM_SIZE        ((UINT32)(__los_heap_size__))
-#define LOSCFG_SYS_HEAP_ADDR             (VOID *)(__los_heap_addr_start__)
+#define LOSCFG_SYS_EXTERNAL_HEAP                            1
+#define OS_SYS_MEM_SIZE                                     ((UINT32)(__los_heap_size__))
+#define LOSCFG_SYS_HEAP_ADDR                                (VOID *)(__los_heap_addr_start__)
 #define LOSCFG_BASE_MEM_NODE_INTEGRITY_CHECK                0
 #define LOSCFG_BASE_MEM_NODE_SIZE_CHECK                     1
 #define LOSCFG_MEM_MUL_POOL                                 0
@@ -105,10 +105,9 @@ extern "C" {
 
 #define LOSCFG_FAMILY_B91                                   1
 
-#define LOSCFG_TELINK_B91_CPU_FREQ 48000000
-#define LOSCFG_POWER_MODE_LDO_1P4_LDO_1P8 1
-#define LOSCFG_VBAT_TYPE_MAX_VALUE_GREATER_THAN_3V6 1
-
+#define LOSCFG_TELINK_B91_CPU_FREQ                          48000000
+#define LOSCFG_POWER_MODE_LDO_1P4_LDO_1P8                   1
+#define LOSCFG_VBAT_TYPE_MAX_VALUE_GREATER_THAN_3V6         1
 
 #ifdef __cplusplus
 #if __cplusplus

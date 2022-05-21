@@ -16,16 +16,18 @@
  *
  *****************************************************************************/
 
-#pragma once
+#ifndef APP_CONFIG_H
+#define APP_CONFIG_H
 
+#define MASTER_MAX_NUM                              4
+#define SLAVE_MAX_NUM                               4
 
-#define MASTER_MAX_NUM								4
-#define SLAVE_MAX_NUM								4
+/* Feature Configuration */
+#define	FLASH_SIZE_CONFIG                           FLASH_SIZE_2M
 
-///////////////////////// Feature Configuration////////////////////////////////////////////////
-#define	FLASH_SIZE_CONFIG		   					FLASH_SIZE_2M  //very important, user need confirm !!!
-
-///////////////////////// DEBUG  Configuration ////////////////////////////////////////////////
-#define UART_PRINT_DEBUG_ENABLE                     1  //printf
+/* DEBUG Configuration */
+#define UART_PRINT_DEBUG_ENABLE                     1
 
 #include "../common/default_config.h"
+
+#endif // APP_CONFIG_H
