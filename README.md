@@ -50,7 +50,7 @@
 
 参考 [开发板设计文档](http://wiki.telink-semi.cn/doc/hw/B91_DevelopmentBoard_TLSR9518ADK80D.zip)
 
-### 环境搭建
+## 环境搭建
 
 参考 [环境搭建步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README.md)
 
