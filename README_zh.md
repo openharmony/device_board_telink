@@ -12,22 +12,21 @@
 
 ## 开发板规格
 
-
-| 器件类别	 |              开发板              |
+| 器件类别  |              开发板              |
 | ---------- | -------------------------------- |
-| CPU	      | TLSR9518A, RISC-V (Max: 96MHz) |
-| RAM	      | 256KB SRAM                       |
-| Flash	      | 2MB SPI Flash                    |
-| GPIO	      | 40                             |
-| I2C	      | 1                               |
+| CPU       | TLSR9518A, RISC-V (Max: 96MHz) |
+| RAM       | 256KB SRAM                       |
+| Flash      | 2MB SPI Flash                    |
+| GPIO      | 40                             |
+| I2C      | 1                               |
 | UART       | 2                                |
-| SPI	      | Memory SPI, HSPI, PSPI       |
-| USB	      | 1                            |
-| PWM	      | 6                             |
-| LED	      | 4                                |
-| Debug 	    | JTAG、Swire               |
-| ADC	      | 10-channel 14bit auxilary ADC |
-| Button	| 4 |
+| SPI      | Memory SPI, HSPI, PSPI       |
+| USB      | 1                            |
+| PWM      | 6                             |
+| LED      | 4                                |
+| Debug     | JTAG、Swire               |
+| ADC      | 10-channel 14bit auxilary ADC |
+| Button    | 4 |
 
 ## OpenHarmonyOS关键特性
 
@@ -43,7 +42,7 @@
 | 系统属性     | 提供获取与设置系统属性的能力。                                                                   |
 | 基础库       | 提供公共基础库能力，包括：文件操作、KV存储管理等。                                                      |
 | DFX          | 提供DFX能力，包括：流水日志等。                                                     |
-| HDF	       | 提供OpenHarmony硬件配置驱动的能力。                                                         |
+| HDF           | 提供OpenHarmony硬件配置驱动的能力。                                                         |
 | XTS          | 提供OpenHarmonyOS生态认证测试套件的集合能力。                                                    |
 
 ## 开发板设计文档
@@ -52,20 +51,21 @@
 
 ## 环境搭建
 
-参考 [环境搭建步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README.md)
-
+参考 [环境搭建步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README_zh.md#1-工具安装)
 
 ## 编译调试
 
-参考 [编译调试步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README.md)
-
+参考 [编译调试步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README_zh.md#4-编译工程)
 
 ## 示例代码
 
 代码默认有3个示例：
+
 1. [LED应用示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_led_demo)
+
 2. [BLE测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_ble_demo)
-2. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_xts_demo)
+
+3. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_xts_demo)
 
 ## 联系
 
