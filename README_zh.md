@@ -102,10 +102,9 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
     XTS测试示例是OpenHarmony生态认证测试套件的集合的XTS子系统，在B91开发板上进行的实现。
     本实现参考了应用兼容性测试套件中的[测试用例源码与配置文件](https://gitee.com/openharmony/xts_acts)和[测试用例开发框架](https://gitee.com/openharmony/xts_tools)。
 
-    在B91开发板上烧录`b91_devkit_xts_demo.bin`并上电重启后，会依次运行以下XTS测试用例集合。
+    在B91开发板上烧录`b91_devkit_xts_demo.bin`并上电重启后，会运行以下XTS测试用例集合。
 
     ```shell
-        "hctest",
         "module_ActsKvStoreTest",
         "module_ActsUtilsFileTest",
         "module_ActsParameterTest",
