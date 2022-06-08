@@ -16,9 +16,9 @@
 
 开发板正反面视图如下：
 
-![开发板正面视图](image/TLSR9518ADK80D_Top_View.png)
+![开发板正面视图](figures/tlsr9518adk80d_top_view.png)
 
-![开发板背面视图](image/TLSR9518ADK80D_Bottom_View.png)
+![开发板背面视图](figures/tlsr9518adk80d_bottom_view.png)
 
 ## 开发板规格
 
@@ -78,7 +78,7 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
     在B91开发板上烧录`b91_devkit_led_demo.bin`并上电重启后，可以实现简单的点亮LED灯的功能。
     其主要功能的任务代码如下图所示：
 
-    ![LED应用任务](image/led_code.png)
+    ![LED应用任务](figures/led_code.png)
 
     第一个任务是使用串口模块打印出`Hello World, time:{RUNNING_TIME_SECOND}`，另一个是使用开发板上GPIO口去操控蓝色LED灯，实现闪烁效果。
     这里的打印间隔以及LED闪烁的间隔都由宏`DELAY`定义，即1000ms。
@@ -89,11 +89,11 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
     在B91开发板上烧录`b91_devkit_ble_demo.bin`并上电重启后，可以实现BLE协议栈的相关功能。
     通过智能手机上的蓝牙连接工具，如nRF Connect，可以搜索到名为“eSample”的BLE测试示例的广播信息，如下图：
 
-    ![BLE广播信息](image/eSample.jpg)
+    ![BLE广播信息](figures/esample.jpg)
 
     点击“CONNECT”按钮之后，手机会和B91开发板建立起蓝牙连接，可以在下图中查看到所建立的GATT服务：
 
-    ![建立连接](image/connected.jpg)
+    ![建立连接](figures/connected.jpg)
 
     同时，白色的LED灯会在建立连接时进入常亮状态，提示蓝牙已连接。此时按下“DISCONNECT"按钮，蓝牙连接会断开，白灯熄灭。
 
