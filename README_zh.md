@@ -73,20 +73,20 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
 
 可以将示例生成的二进制固件烧录进B91开发板，代码默认有3个示例：
 
-1. [LED应用示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_led_demo)
+1. [LED应用示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/led_demo)
 
-    在B91开发板上烧录`b91_devkit_led_demo.bin`并上电重启后，可以实现简单的点亮LED灯的功能。
+    在B91开发板上烧录固件 `led_demo.bin` 并上电重启后，可以实现简单的点亮LED灯的功能。
     其主要功能的任务代码如下图所示：
 
     ![LED应用任务](image/led_code.png)
 
-    第一个任务是使用串口模块打印出`Hello World, time:{RUNNING_TIME_SECOND}`，另一个是使用开发板上GPIO口去操控蓝色LED灯，实现闪烁效果。
-    这里的打印间隔以及LED闪烁的间隔都由宏`DELAY`定义，即1000ms。
-    另外，打印出的时间戳`{RUNNING_TIME_SECOND}`也根据`DELAY`的取值而计时。
+    第一个任务是使用串口模块打印出 `Hello World, time:{RUNNING_TIME_SECOND}`，另一个是使用开发板上GPIO口去操控蓝色LED灯，实现闪烁效果。
+    这里的打印间隔以及LED闪烁的间隔都由宏 `DELAY` 定义，即1000ms。
+    另外，打印出的时间戳 `{RUNNING_TIME_SECOND}` 也根据 `DELAY` 的取值而计时。
 
-2. [BLE测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_ble_demo)
+2. [BLE测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/ble_demo)
 
-    在B91开发板上烧录`b91_devkit_ble_demo.bin`并上电重启后，可以实现BLE协议栈的相关功能。
+    在B91开发板上烧录 `ble_demo.bin` 并上电重启后，可以实现BLE协议栈的相关功能。
     通过智能手机上的蓝牙连接工具，如nRF Connect，可以搜索到名为“eSample”的BLE测试示例的广播信息，如下图：
 
     ![BLE广播信息](image/eSample.jpg)
@@ -97,12 +97,12 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
 
     同时，白色的LED灯会在建立连接时进入常亮状态，提示蓝牙已连接。此时按下“DISCONNECT"按钮，蓝牙连接会断开，白灯熄灭。
 
-3. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/b91_devkit_xts_demo)
+3. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/xts_demo)
 
     XTS测试示例是OpenHarmony生态认证测试套件的集合的XTS子系统，在B91开发板上进行的实现。
     本实现参考了应用兼容性测试套件中的[测试用例源码与配置文件](https://gitee.com/openharmony/xts_acts)和[测试用例开发框架](https://gitee.com/openharmony/xts_tools)。
 
-    在B91开发板上烧录`b91_devkit_xts_demo.bin`并上电重启后，会运行以下XTS测试用例集合。
+    在B91开发板上烧录 `xts_demo.bin` 并上电重启后，会运行以下XTS测试用例集合。
 
     ```shell
         "module_ActsKvStoreTest",
@@ -114,7 +114,7 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
         "module_ActsSamgrTest",
     ```
 
-    也可以在`b91_devkit_xts_demo\BUILD.gn`当中添加您想要的测试用例集合，测试结果会以串口打印输出。
+    也可以在 `xts_demo\BUILD.gn` 当中添加您想要的测试用例集合，测试结果会以串口打印输出。
 
 ## 联系
 
