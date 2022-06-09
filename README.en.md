@@ -76,9 +76,9 @@ to optimise total system cost.
 
    | Project name | Description |
    | :--- | :--- |
-   | b91_devkit_led_demo | simple led example for b91 devkit |
-   | b91_devkit_ble_demo | simple ble example for b91 devkit |
-   | b91_devkit_xts_demo | unit tests for b91 devkit |
+   | led_demo | simple led example for b91 devkit |
+   | ble_demo | simple ble example for b91 devkit |
+   | xts_demo | unit tests for b91 devkit |
    
    or set project name as an argument of hb set, like: `hb set -p <project_name>`
 
