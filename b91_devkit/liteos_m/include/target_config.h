@@ -44,7 +44,7 @@ extern "C" {
 =============================================================================*/
 #define LOSCFG_PLATFORM_HWI                                 1
 #define LOSCFG_USE_SYSTEM_DEFINED_INTERRUPT                 0
-#define LOSCFG_PLATFORM_HWI_LIMIT                           OS_HWI_MAX_NUM
+#define LOSCFG_PLATFORM_HWI_LIMIT                           25
 #define LOSCFG_PLATFORM_HWI_WITH_ARG                        1
 /*=============================================================================
                                        Task module configuration
