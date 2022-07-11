@@ -105,8 +105,8 @@ extern "C" {
 
 #define LOSCFG_FAMILY_B91                                   1
 
-#define LOSCFG_TELINK_B91_CPU_FREQ                          48000000
-#define LOSCFG_POWER_MODE_LDO_1P4_LDO_1P8                   1
+#define LOSCFG_TELINK_B91_CPU_FREQ                          16000000
+#define LOSCFG_POWER_MODE_DCDC_1P4_DCDC_1P8                 1
 #define LOSCFG_VBAT_TYPE_MAX_VALUE_GREATER_THAN_3V6         1
 
 #ifdef __cplusplus
