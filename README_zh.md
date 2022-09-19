@@ -62,18 +62,18 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
 
 ## 环境搭建
 
-推荐在Windows+Ubuntu环境下进行开发，如果对环境搭建的过程有问题，可以参见 [环境搭建步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README_zh.md#安装工具) 中开发环境、安装工具、获取源码、确认目录结构等章节。
+推荐在Windows+Ubuntu环境下进行开发，如果对环境搭建的过程有问题，可以参见 [环境搭建步骤](https://gitee.com/openharmony/device_soc_telink/blob/master/README_zh.md#安装工具) 中开发环境、安装工具、获取源码、确认目录结构等章节。
 
 ## 编译调试
 
 在完成上述环境搭建之后，可以进行编译生成B91开发板上所需的二进制固件。可以使用烧录工具将固件烧录进B91开发板。
-编译调试的详细过程可以参见 [编译调试步骤](https://gitee.com/openharmony-sig/device_soc_telink/blob/master/README_zh.md#编译工程) 中编译工程、烧录固件等章节。
+编译调试的详细过程可以参见 [编译调试步骤](https://gitee.com/openharmony/device_soc_telink/blob/master/README_zh.md#编译工程) 中编译工程、烧录固件等章节。
 
 ## 示例代码
 
 可以将示例生成的二进制固件烧录进B91开发板，代码默认有3个示例：
 
-1. [LED应用示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/led_demo)
+1. [LED应用示例](https://gitee.com/openharmony/vendor_telink/tree/master/led_demo)
 
     在B91开发板上烧录固件 `led_demo.bin` 并上电重启后，可以实现简单的点亮LED灯的功能。
     其主要功能的任务代码如下图所示：
@@ -84,7 +84,7 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
     这里的打印间隔以及LED闪烁的间隔都由宏 `DELAY` 定义，即1000ms。
     另外，打印出的时间戳 `{RUNNING_TIME_SECOND}` 也根据 `DELAY` 的取值而计时。
 
-2. [BLE测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/ble_demo)
+2. [BLE测试示例](https://gitee.com/openharmony/vendor_telink/tree/master/ble_demo)
 
     在B91开发板上烧录 `ble_demo.bin` 并上电重启后，可以实现BLE协议栈的相关功能。
     通过智能手机上的蓝牙连接工具，如nRF Connect，可以搜索到名为“eSample”的BLE测试示例的广播信息，如下图：
@@ -97,7 +97,7 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
 
     同时，白色的LED灯会在建立连接时进入常亮状态，提示蓝牙已连接。此时按下“DISCONNECT"按钮，蓝牙连接会断开，白灯熄灭。
 
-3. [XTS测试示例](https://gitee.com/openharmony-sig/vendor_telink/tree/master/xts_demo)
+3. [XTS测试示例](https://gitee.com/openharmony/vendor_telink/tree/master/xts_demo)
 
     XTS测试示例是OpenHarmony生态认证测试套件的集合的XTS子系统，在B91开发板上进行的实现。
     本实现参考了应用兼容性测试套件中的[测试用例源码与配置文件](https://gitee.com/openharmony/xts_acts)和[测试用例开发框架](https://gitee.com/openharmony/xts_tools)。
@@ -118,4 +118,4 @@ B91开发板的总体情况可以参见 [B91 Generic Starter Kit Hardware Guide]
 
 ## 联系
 
-如果您在开发过程中有问题，请在仓库[issues](https://gitee.com/openharmony-sig/device_board_telink/issues)提问。
+如果您在开发过程中有问题，请在仓库[issues](https://gitee.com/openharmony/device_board_telink/issues)提问。
